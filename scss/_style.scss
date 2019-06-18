@@ -216,19 +216,20 @@ font-family: 'Karla', sans-serif; */
     width: 200px;
     position: relative;
     z-index: -1000;
-    
 }
 
 .image-title::after {
     content: "";
     color: black;
+    display: block;
     width: 150px;
     height: 150px;
     border: 20px solid #D7D7D7;
     position: absolute;
     border-radius: 50%;
-    left: 20%;
-    bottom: 50%;
+    top: 0;
+    left: -100px;
+    z-index: -1000;
 }
 
 @media (max-width: 760px) {
