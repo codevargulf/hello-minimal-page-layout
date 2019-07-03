@@ -36,7 +36,7 @@ const css  = function() {
     return gulp.src('./scss/main.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({
-            outputStyle : "compressed" //nested, compact, expanded
+            outputStyle : "expanded" //nested, compact, expanded
          }).on('error', ourError))
          .pipe(autoprefixer({
             browsers: ['last 2 versions']

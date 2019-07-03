@@ -195,16 +195,14 @@ table {
 
 .main-banner div {
   background-color: #fff;
-  width: 20em;
-  height: 100px;
-  position: relative;
+  width: 200px;
+  height: 20px;
 }
 
 .main-banner h1 {
+  margin-top: 20px;
   font-size: 4.5em;
   color: #000;
-  position: absolute;
-  bottom: +50%;
 }
 
 /*------------------------------------*/
@@ -253,6 +251,7 @@ font-family: 'Karla', sans-serif; */
 .offer-box {
   font-family: 'Karla', sans-serif;
   text-transform: uppercase;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,16 +305,18 @@ font-family: 'Karla', sans-serif; */
 .image-title::after {
   content: "";
   color: black;
+  display: block;
   width: 150px;
   height: 150px;
   border: 20px solid #D7D7D7;
   position: absolute;
   border-radius: 50%;
-  left: 20%;
-  bottom: 50%;
+  top: 0;
+  left: -100px;
+  z-index: -1000;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1024px) {
   .image-cnt {
     display: none;
   }
@@ -481,11 +482,15 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .icons-list img {
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
+  padding: 1em;
 }
 
 /*# sourceMappingURL=main.css.map */
